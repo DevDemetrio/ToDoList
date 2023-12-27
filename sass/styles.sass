@@ -1,5 +1,87 @@
+@import 'reset'
 @import 'colors'
 
 
 body
     background-color: $cor-general-background
+
+#main-container
+    background-color: $cor-screen
+    position: relative
+    max-width: 50%
+    margin-left: auto
+    margin-right: auto
+    padding: 30px
+    margin-top: 5vh
+
+#add-container
+    margin-bottom: 20px
+    padding-bottom: 20px
+    border-bottom: 1px solid $cor-divider
+
+#add-container input, #add-container button
+    padding: 10px
+    background-color: #393939
+    border: none
+    width: 80%
+    display: inline-block
+
+#add-container button
+    width: 18%
+    cursor: pointer
+    transition: .5s
+
+    &:hover
+        background-color: $cor-button
+        
+    &:hover > i 
+            color: $cor-screen
+
+#add-container button i
+    color: $cor-button
+
+
+/*Tasks container*/
+
+.task
+    margin-bottom: 15px
+    padding-bottom: 15px
+    border-bottom: 1px solid #444
+    positon: relative
+   
+
+    &:hover .fa-trash
+        display: block
+
+.hide
+    display: none
+
+.fa.fa-check
+    border-radius: 50%
+    border: 1px solid #444
+    padding: 7px
+    margin-right: 10px
+    cursor: pointer
+
+    &.done
+        color: #0dd657
+        border: 1px solid #0dd657
+
+    &:hover
+        color: $cor-button
+        border: 1px solid $cor-button
+
+.fa.fa-trash
+    position: absolute
+    right: 30px
+    top: 220px
+    cursor: pointer
+    display: none
+
+
+    &:hover
+        color: $cor-button
+        border: $cor-button
+
+#empty-staks
+    text-align: center

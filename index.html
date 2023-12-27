@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
@@ -19,11 +19,14 @@
 
         <div id="task-container">
             <h2>Veja suas tarefas:</h2>
-            <div class="task">
-                <i class="fa-solid fa-check"></i>
+            <!--TEMPLATE-->
+            <div class="task hide">
+                <i class="fa fa-check"></i>
                 <span class="task-title">Ttitulo da tarefa</span>
                 <i class="fa fa-trash"></i>
             </div>
+            <!--FIM TEMPLATE-->
+            <p id="empty-staks">Não há tarefas cadastradas</p>
         </div>
    </div>
     <script src="/js/script.js"></script>
